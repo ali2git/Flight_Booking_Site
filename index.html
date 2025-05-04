@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Booking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">SpiceJet</div>
+    <nav>
+      <a href="#">Add-ons</a>
+      <a href="#">Deals</a>
+      <a href="#">GiftCard</a>
+      <a href="#">Login</a>
+      <a href="#">Signup</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-text">
+        <h1>DELHI TO <span>KATHMANDU</span></h1>
+        <p>NEW. DAILY. DIRECT</p>
+        <button>BOOK NOW</button>
+      </div>
+    </div>
+    <form class="booking-box">
+      <h2>Welcome aboard</h2>
+      <label>From: <input type="text" value="Delhi (DEL)" /></label>
+      <label>To:
+        <input type="text" id="destination" placeholder="Select Destination" autocomplete="off" />
+        <div id="suggestions" class="suggestions-box"></div>
+      </label>
+      <label>Date: <input type="date" /></label>
+      <label>Passengers: <input type="number" value="1" min="1" /></label>
+      <button type="submit">Search Flight</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
