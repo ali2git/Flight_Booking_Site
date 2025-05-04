@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,36 +9,43 @@
 </head>
 <body>
   <header>
-    <div class="logo">SpiceJet</div>
-    <nav>
-      <a href="#">Add-ons</a>
-      <a href="#">Deals</a>
-      <a href="#">GiftCard</a>
-      <a href="#">Login</a>
-      <a href="#">Signup</a>
-    </nav>
+    <div class="nav">
+      <h1 class="logo">SpiceJet</h1>
+      <nav>
+        <a href="#">Add-ons</a>
+        <a href="#">Deals</a>
+        <a href="#">GiftCard</a>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="overlay">
-      <div class="hero-text">
-        <h1>DELHI TO <span>KATHMANDU</span></h1>
-        <p>NEW. DAILY. DIRECT</p>
-        <button>BOOK NOW</button>
-      </div>
-    </div>
-    <form class="booking-box">
+  <main>
+    <div class="form-container">
       <h2>Welcome aboard</h2>
-      <label>From: <input type="text" value="Delhi (DEL)" /></label>
-      <label>To:
-        <input type="text" id="destination" placeholder="Select Destination" autocomplete="off" />
-        <div id="suggestions" class="suggestions-box"></div>
-      </label>
-      <label>Date: <input type="date" /></label>
-      <label>Passengers: <input type="number" value="1" min="1" /></label>
-      <button type="submit">Search Flight</button>
-    </form>
-  </section>
+      <form id="searchForm">
+        <label>From:<br />
+          <input id="from" type="text" placeholder="Delhi (DEL)" />
+        </label><br />
+        <label>To:<br />
+          <input id="to" type="text" placeholder="Select Destination" />
+        </label><br />
+        <label>Date:<br />
+          <input id="date" type="date" />
+        </label><br />
+        <label>Passengers:<br />
+          <input id="passengers" type="number" min="1" value="1" />
+        </label><br /><br />
+        <button type="submit">Search Flight</button>
+      </form>
+    </div>
+    <div class="promo">
+      <h1>DELHI TO <span>KATHMANDU</span></h1>
+      <p>NEW. DAILY. DIRECT</p>
+      <button class="book">BOOK NOW</button>
+    </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
