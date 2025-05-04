@@ -1,52 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flight Booking</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SpiceJet Flight Booking</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <h1 class="logo">SpiceJet</h1>
-      <nav>
-        <a href="#">Add-ons</a>
-        <a href="#">Deals</a>
-        <a href="#">GiftCard</a>
-        <a href="#">Login</a>
-        <a href="#">Signup</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="form-container">
-      <h2>Welcome aboard</h2>
-      <form id="searchForm">
-        <label>From:<br />
-          <input id="from" type="text" placeholder="Delhi (DEL)" />
-        </label><br />
-        <label>To:<br />
-          <input id="to" type="text" placeholder="Select Destination" />
-        </label><br />
-        <label>Date:<br />
-          <input id="date" type="date" />
-        </label><br />
-        <label>Passengers:<br />
-          <input id="passengers" type="number" min="1" value="1" />
-        </label><br /><br />
-        <button type="submit">Search Flight</button>
-      </form>
-    </div>
-    <div class="promo">
-      <h1>DELHI TO <span>KATHMANDU</span></h1>
-      <p>NEW. DAILY. DIRECT</p>
-      <button class="book">BOOK NOW</button>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
+    <header>
+        <div class="logo">SpiceJet</div>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">Add-ons
+                    <ul class="submenu">
+                        <li>Food</li>
+                        <li>Wheelchair</li>
+                    </ul>
+                </li>
+                <li class="dropdown">Deals
+                    <ul class="submenu">
+                        <li>Buy_1_Get_1</li>
+                        <li>Credit_Card_Discounts</li>
+                        <li>Student_Discounts</li>
+                    </ul>
+                </li>
+                <li class="dropdown">GiftCard
+                    <ul class="submenu">
+                        <li>Newly_Married_Couple</li>
+                        <li>Senior_Citizens</li>
+                    </ul>
+                </li>
+                <li>Login</li>
+                <li>Signup</li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
 </body>
 </html>
