@@ -1,1 +1,1 @@
-// No JavaScript needed for hover menus. Add interactivity here if needed.
+// No script needed for basic dropdown hover functionality
