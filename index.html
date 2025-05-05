@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SpiceJet</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>SpiceJet</h1>
+    <div class="logo">SpiceJet</div>
     <nav>
       <ul class="menu">
         <li>
           <a href="#">Add-ons</a>
-          <ul class="dropdown">
+          <ul class="submenu">
             <li><a href="#">Food</a></li>
             <li><a href="#">Wheelchair</a></li>
           </ul>
         </li>
         <li>
           <a href="#">Deals</a>
-          <ul class="dropdown">
+          <ul class="submenu">
             <li><a href="#">Buy 1 Get 1</a></li>
             <li><a href="#">Credit Card Discounts</a></li>
             <li><a href="#">Student Discounts</a></li>
@@ -28,7 +28,7 @@
         </li>
         <li>
           <a href="#">GiftCard</a>
-          <ul class="dropdown">
+          <ul class="submenu">
             <li><a href="#">Newly Married Couple</a></li>
             <li><a href="#">Senior Citizens</a></li>
           </ul>
@@ -39,28 +39,28 @@
     </nav>
   </header>
 
-  <main>
-    <section class="booking">
-      <div class="booking-form">
-        <h2>Welcome aboard</h2>
-        <form>
-          <label>From:</label>
-          <input type="text" placeholder="Delhi (DEL)">
-          <label>To:</label>
-          <input type="text" placeholder="Select Destination">
-          <label>Date:</label>
-          <input type="date">
-          <label>Passengers:</label>
-          <input type="number" min="1" value="1">
-          <button type="submit">Search Flight</button>
-        </form>
-      </div>
-      <div class="promo">
-        <h2>DELHI TO <span>KATHMANDU</span></h2>
-        <p>NEW. DAILY. DIRECT</p>
-        <button>BOOK NOW</button>
-      </div>
+  <main class="content">
+    <section class="booking-box">
+      <h2>Welcome aboard</h2>
+      <form>
+        <label>From:</label>
+        <input type="text" placeholder="Delhi (DEL)" />
+        <label>To:</label>
+        <input type="text" placeholder="Select Destination" />
+        <label>Date:</label>
+        <input type="date" />
+        <label>Passengers:</label>
+        <input type="number" min="1" value="1" />
+        <button type="submit">Search Flight</button>
+      </form>
+    </section>
+    <section class="banner">
+      <h1>DELHI TO <span>KATHMANDU</span></h1>
+      <p>NEW. DAILY. DIRECT</p>
+      <button>BOOK NOW</button>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

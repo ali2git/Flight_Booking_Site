@@ -1,81 +1,132 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: #4a4a4a;
+  font-family: Arial, sans-serif;
+  background: #4d4d4d;
   color: white;
 }
 
 header {
-  background-color: #cc0000;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #cc0000;
+  padding: 10px 20px;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu > li > a {
+.logo {
+  font-size: 24px;
+  font-weight: bold;
   color: white;
+}
+
+nav ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul.menu > li {
+  position: relative;
+  margin: 0 10px;
+}
+
+nav ul.menu > li > a {
   text-decoration: none;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: white;
-  color: black;
+  color: white;
   padding: 10px;
-  top: 100%;
-  left: 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.menu li:hover .dropdown {
   display: block;
 }
 
-.booking {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.booking-form {
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
   background-color: white;
   color: black;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+nav ul.submenu li {
+  padding: 10px;
+}
+
+nav ul.submenu li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul.menu li:hover > .submenu {
+  display: block;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.booking-box {
+  background: white;
+  color: black;
   padding: 20px;
-  border-radius: 10px;
+  width: 300px;
+  border-radius: 8px;
 }
 
-.booking-form input,
-.booking-form button {
+.booking-box h2 {
+  margin-top: 0;
+}
+
+.booking-box input {
   width: 100%;
-  margin-top: 10px;
+  margin: 5px 0 15px;
   padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-.promo h2 {
-  font-size: 36px;
+.booking-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.promo span {
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  max-width: 600px;
+  padding-left: 40px;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner h1 span {
   color: red;
 }
 
-.promo button {
+.banner p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.banner button {
+  padding: 12px 24px;
   background-color: red;
   color: white;
-  padding: 10px 20px;
-  margin-top: 10px;
+  font-weight: bold;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
